@@ -1,0 +1,666 @@
+/* ================= GOOGLE FONT ================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+/* ================= BODY ================= */
+
+body{
+
+  min-height:100vh;
+
+  background:
+  linear-gradient(
+    rgba(0,0,0,0.55),
+    rgba(0,0,0,0.55)
+  ),
+
+  url("images/food.jpg");
+
+  background-size:cover;
+
+  background-position:center;
+
+  background-attachment:fixed;
+
+  overflow-x:hidden;
+}
+
+/* ================= FULL PAGE ================= */
+
+.fullPage{
+
+  min-height:100vh;
+
+  width:100%;
+
+  display:flex;
+
+  justify-content:center;
+
+  align-items:center;
+
+  flex-direction:column;
+
+  padding:40px;
+}
+
+/* ================= CARD ================= */
+
+.card{
+
+  width:100%;
+
+  max-width:650px;
+
+  background:rgba(255,255,255,0.12);
+
+  backdrop-filter:blur(14px);
+
+  border:1px solid rgba(255,255,255,0.2);
+
+  border-radius:25px;
+
+  padding:40px;
+
+  color:white;
+
+  box-shadow:0 8px 32px rgba(0,0,0,0.3);
+}
+
+/* ================= HEADINGS ================= */
+
+h1{
+
+  font-size:55px;
+
+  margin-bottom:15px;
+
+  color:white;
+}
+
+h2{
+
+  margin-bottom:20px;
+
+  color:white;
+}
+
+h3{
+
+  margin-top:25px;
+
+  margin-bottom:15px;
+}
+
+.tagline{
+
+  margin-bottom:25px;
+
+  color:#f1f1f1;
+}
+
+/* ================= INPUTS ================= */
+
+input,
+select{
+
+  width:100%;
+
+  padding:15px;
+
+  margin:12px 0;
+
+  border:none;
+
+  border-radius:15px;
+
+  background:rgba(255,255,255,0.18);
+
+  color:white;
+
+  font-size:15px;
+}
+
+input::placeholder{
+
+  color:#ddd;
+}
+
+select{
+
+  color:black;
+}
+
+/* ================= BUTTONS ================= */
+
+button{
+
+  padding:14px 24px;
+
+  border:none;
+
+  border-radius:14px;
+
+  cursor:pointer;
+
+  font-weight:600;
+
+  margin-top:10px;
+
+  transition:0.3s;
+}
+
+button:hover{
+
+  transform:translateY(-2px);
+}
+
+/* LOGIN */
+
+#loginBtn{
+
+  background:
+  linear-gradient(
+    135deg,
+    #12544d,
+    #74a323
+  );
+
+  color:white;
+}
+
+/* SIGNUP */
+
+#signupBtn{
+
+  background:
+  linear-gradient(
+    135deg,
+    #fc466b,
+    #3f5efb
+  );
+
+  color:white;
+}
+
+/* DONATE */
+
+#donateBtn{
+
+  background:
+  linear-gradient(
+    135deg,
+    #11998e,
+    #38ef7d
+  );
+
+  color:white;
+}
+
+/* LOGOUT */
+
+.logoutBtn{
+
+  background:
+  linear-gradient(
+    135deg,
+    #330a14,
+    #882b1b
+  );
+
+  color:white;
+
+  float:none;
+
+  display:block;
+
+  margin-left:auto;
+
+  margin-bottom:20px;
+}
+
+/* ACCEPT BUTTON */
+
+.acceptBtn{
+
+  background:#2e8b57;
+
+  color:white;
+}
+
+/* REJECT BUTTON */
+
+.rejectBtn{
+
+  background:#c62828 !important;
+
+  color:white;
+}
+
+/* ================= TABLE ================= */
+
+table{
+
+  width:100%;
+
+  border-collapse:collapse;
+
+  margin-top:20px;
+}
+
+th,
+td{
+
+  padding:12px;
+
+  text-align:center;
+
+  border:1px solid rgba(255,255,255,0.2);
+
+  color:white;
+}
+
+th{
+
+  background:rgba(255,255,255,0.12);
+}
+
+/* ================= SEARCH AREA ================= */
+
+.searchArea{
+
+  display:flex;
+
+  gap:15px;
+
+  margin-bottom:20px;
+
+  flex-wrap:wrap;
+}
+
+.searchArea input{
+
+  flex:1;
+}
+
+.searchArea select{
+
+  width:180px;
+}
+
+/* ================= MESSAGE ================= */
+
+#authMessage,
+#quote{
+
+  margin-top:15px;
+
+  font-weight:600;
+}
+
+/* ================= HIDDEN ================= */
+
+.hidden{
+
+  display:none;
+}
+
+/* ================= SECOND PAGE ================= */
+
+.secondPage{
+
+  text-align:center;
+
+  color:white;
+
+  width:80%;
+}
+
+.secondPage h1{
+
+  font-size:60px;
+
+  margin-bottom:25px;
+}
+
+.secondPage p{
+
+  font-size:24px;
+
+  line-height:1.8;
+
+  margin-bottom:20px;
+}
+
+.quoteBox{
+
+  margin-top:30px;
+
+  background:rgba(255,255,255,0.12);
+
+  padding:30px;
+
+  border-radius:20px;
+
+  font-size:24px;
+
+  font-style:italic;
+}
+
+/* ================= THIRD PAGE ================= */
+
+.thirdPage{
+
+  text-align:center;
+
+  color:white;
+
+  display:flex;
+
+  flex-direction:column;
+
+  align-items:center;
+
+  gap:25px;
+
+  width:80%;
+}
+
+.referenceText{
+
+  font-size:22px;
+}
+
+.thirdPage a{
+
+  text-decoration:none;
+
+  color:white;
+
+  background:rgba(255,255,255,0.15);
+
+  padding:18px 30px;
+
+  border-radius:18px;
+
+  width:350px;
+
+  transition:0.3s;
+}
+
+.thirdPage a:hover{
+
+  transform:scale(1.05);
+
+  background:rgba(255,255,255,0.25);
+}
+
+/* ================= FUTURE BOX ================= */
+
+.futureBox{
+
+  margin-top:30px;
+
+  background:rgba(255,255,255,0.12);
+
+  padding:30px;
+
+  border-radius:20px;
+
+  max-width:700px;
+}
+
+.futureBox p{
+
+  margin-top:15px;
+
+  line-height:1.8;
+
+  font-size:18px;
+}
+
+/* ================= DONOR SECTION ================= */
+
+#donorSection{
+
+  position:absolute;
+
+  top:20px;
+
+  left:50%;
+
+  transform:translateX(-50%);
+
+  width:90%;
+
+  max-width:1000px;
+
+  max-height:95vh;
+
+  overflow-y:auto;
+}
+/* ================= NGO SECTION ================= */
+
+#receiverSection{
+
+  position:relative;
+
+  width:95%;
+
+  max-width:1300px;
+
+  margin:40px auto;
+
+  transform:none;
+
+  top:auto;
+
+  left:auto;
+
+  max-height:none;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:768px){
+
+  h1{
+
+    font-size:38px;
+  }
+
+  .secondPage h1{
+
+    font-size:42px;
+  }
+
+  .secondPage p{
+
+    font-size:18px;
+  }
+
+  .thirdPage{
+
+    width:100%;
+  }
+
+  .thirdPage a{
+
+    width:100%;
+  }
+
+  table{
+
+    display:block;
+
+    overflow-x:auto;
+  }
+
+  .searchArea{
+
+    flex-direction:column;
+  }
+
+  .searchArea select{
+
+    width:100%;
+  }
+
+  .card{
+
+    padding:25px;
+  }
+}
+
+@media(max-width:480px){
+
+  h1{
+
+    font-size:30px;
+  }
+
+  .secondPage h1{
+
+    font-size:32px;
+  }
+
+  .secondPage p{
+
+    font-size:16px;
+  }
+
+  .card{
+
+    padding:20px;
+  }
+}
+/* ================= EDIT BUTTON ================= */
+
+.editBtn{
+
+  background:#1565c0;
+
+  color:white;
+
+  margin-right:5px;
+}
+
+/* ================= DELETE BUTTON ================= */
+
+.deleteBtn{
+
+  background:#d32f2f;
+
+  color:white;
+}
+
+/* ================= ACTION BUTTONS ================= */
+
+.actionBtns{
+
+  display:flex;
+
+  gap:5px;
+
+  justify-content:center;
+
+  flex-wrap:wrap;
+}/* ================= STATS ================= */
+
+.statsContainer{
+
+  display:grid;
+
+  grid-template-columns:
+  repeat(4,1fr);
+
+  gap:15px;
+
+  margin-bottom:25px;
+}
+
+.statCard{
+
+  background:
+  rgba(255,255,255,0.12);
+
+  padding:15px;
+
+  border-radius:15px;
+
+  text-align:center;
+
+  backdrop-filter:blur(10px);
+}
+
+.statCard h3{
+
+  font-size:28px;
+
+  color:#38ef7d;
+
+  margin-bottom:8px;
+}
+
+.statCard p{
+
+  font-size:14px;
+}@media(max-width:768px){
+
+  .statsContainer{
+
+    grid-template-columns:
+    repeat(2,1fr);
+
+  }}
+  #myDonationsSection{
+
+  position:absolute;
+
+  top:20px;
+
+  left:50%;
+
+  transform:translateX(-50%);
+
+  width:95%;
+
+  max-width:1100px;
+
+  max-height:95vh;
+
+  overflow-y:auto;
+} #notificationBox{
+
+  background:rgba(255,255,255,0.12);
+
+  padding:15px;
+
+  border-radius:15px;
+
+  margin:15px 0;
+
+  max-height:150px;
+
+  overflow-y:auto;
+
+  color:white;
+}
+
+.notificationItem{
+
+  padding:10px;
+
+  margin-bottom:10px;
+
+  background:rgba(255,255,255,0.08);
+
+  border-radius:10px;
+}

@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <title>FoodBridge</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- ================= HOME PAGE ================= -->
+
+<section class="fullPage">
+
+  <div id="authSection" class="card">
+
+    <h1>🍲 FoodBridge</h1>
+
+    <p class="tagline">
+      Connecting surplus food to people in need.
+    </p>
+
+    <h2 id="formTitle">
+      Login
+    </h2>
+
+    <input
+      type="email"
+      id="email"
+      placeholder="Enter Email">
+
+    <input
+      type="password"
+      id="password"
+      placeholder="Enter Password">
+
+    <select id="role">
+
+      <option value="donor">
+        Restaurant / Donor
+      </option>
+
+      <option value="ngo">
+        NGO / Receiver
+      </option>
+
+    </select>
+
+    <button id="loginBtn">
+      Login
+    </button>
+
+    <button id="signupBtn">
+      Create Account
+    </button>
+
+    <p id="authMessage"></p>
+
+  </div>
+
+</section>
+
+<!-- ================= DONOR SECTION ================= -->
+
+<div id="donorSection"
+     class="card hidden">
+
+  <h2>
+    Submit Surplus Food
+  </h2>
+  <div class="statsContainer">
+
+  <div class="statCard">
+
+    <h3 id="totalDonations">0</h3>
+
+    <p>Total Donations</p>
+
+  </div>
+
+  <div class="statCard">
+
+    <h3 id="availableDonations">0</h3>
+
+    <p>Available</p>
+
+  </div>
+
+  <div class="statCard">
+
+    <h3 id="acceptedDonations">0</h3>
+
+    <p>Accepted</p>
+
+  </div>
+
+  <div class="statCard">
+
+    <h3 id="peopleServed">0</h3>
+
+    <p>People Served</p>
+
+  </div>
+
+</div>
+<h3>🔔 Notifications</h3>
+
+<div id="notificationBox">
+
+  No notifications yet
+
+</div>
+
+  <button
+    class="logoutBtn"
+    id="logoutBtn1">
+
+    Logout
+
+  </button>
+
+  <input
+    id="donorName"
+    placeholder="Restaurant / Person Name">
+
+  <input
+    id="foodName"
+    placeholder="Food Name">
+
+  <!-- CATEGORY DROPDOWN -->
+
+  <select id="category">
+
+    <option value="">
+      Select Category
+    </option>
+
+    <option value="Rice">
+      Rice
+    </option>
+
+    <option value="Curry">
+      Curry
+    </option>
+
+    <option value="Vegetables">
+      Vegetables
+    </option>
+
+    <option value="Fruits">
+      Fruits
+    </option>
+
+    <option value="Bakery">
+      Bakery
+    </option>
+
+    <option value="Beverages">
+      Beverages
+    </option>
+
+  </select>
+
+  <input
+    id="quantity"
+    type="number"
+    placeholder="People Count">
+
+  <input
+    id="location"
+    placeholder="Location">
+
+  <input
+    id="phone"
+    placeholder="Phone Number">
+    <input
+  type="file"
+  id="foodImage"
+  accept="image/*">
+
+  <button id="donateBtn">
+    Submit Donation
+  </button>
+  <button id="viewDonationsBtn">
+  📋 My Donations
+</button>
+
+  <p id="quote"></p>
+</div>
+<div id="myDonationsSection"
+     class="card hidden">
+
+  <button
+    id="backBtn"
+    class="logoutBtn">
+
+    ← Back
+
+  </button>
+
+  <h2>
+    📋 My Donations
+  </h2>
+
+  <table>
+
+    <thead>
+
+      <tr>
+
+        <th>Category</th>
+        <th>Food</th>
+        <th>Quantity</th>
+        <th>Date</th>
+        <th>Status</th>
+        <th>Action</th>
+
+      </tr>
+
+    </thead>
+
+    <tbody id="myDonations"></tbody>
+
+  </table>
+
+</div>
+
+<!-- ================= NGO SECTION ================= -->
+
+<div id="receiverSection"
+     class="card hidden">
+
+  <h2>
+    Available Donations
+  </h2>
+
+  <button
+    class="logoutBtn"
+    id="logoutBtn2">
+
+    Logout
+
+  </button>
+
+  <!-- SEARCH & FILTER -->
+
+  <div class="searchArea">
+
+    <input
+      type="text"
+      id="searchInput"
+      placeholder="Search Food or Location">
+
+    <select id="statusFilter">
+
+      <option value="All">
+        All
+      </option>
+
+      <option value="Available">
+        Available
+      </option>
+
+      <option value="Accepted">
+        Accepted
+      </option>
+
+      <option value="Rejected">
+        Rejected
+      </option>
+
+    </select>
+
+  </div>
+
+  <table>
+
+    <thead>
+
+      <tr>
+
+        <th>Donor</th>
+        <th>Category</th>
+        <th>Food</th>
+        <th>Qty</th>
+        <th>Date</th>
+        <th>Location</th>
+        <th>Contact</th>
+        <th>Status</th>
+        <th>Action</th>
+
+      </tr>
+
+    </thead>
+
+    <tbody id="foodList"></tbody>
+
+  </table>
+
+</div>
+
+<!-- ================= SECOND PAGE ================= -->
+
+<section class="fullPage">
+
+  <div class="secondPage">
+
+    <h1>
+      🍛 Save Food Save Humanity
+    </h1>
+
+    <p>
+      Every meal shared can save a life.
+    </p>
+
+    <p>
+      FoodBridge connects restaurants,
+      donors and NGOs to reduce hunger
+      and stop food waste.
+    </p>
+
+    <div class="quoteBox">
+
+      “A plate of food can become
+      a reason for someone to smile.”
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ================= THIRD PAGE ================= -->
+
+<section class="fullPage">
+
+  <div class="thirdPage">
+
+    <h1>
+      🌍 Helpful References
+    </h1>
+
+    <p class="referenceText">
+      Together we can build a world
+      without hunger.
+    </p>
+
+    <a
+      href="https://www.redcross.org"
+      target="_blank">
+
+      ❤️ Red Cross Society
+
+    </a>
+
+    <a
+      href="https://www.worldfoodprogramme.org"
+      target="_blank">
+
+      🌐 World Food Programme
+
+    </a>
+
+    <a
+      href="https://www.feedingamerica.org"
+      target="_blank">
+
+      🍽 Feeding America
+
+    </a>
+
+    <div class="futureBox">
+
+      <h2>
+        ✨ Future Vision
+      </h2>
+
+      <p>
+
+        Imagine smart systems where
+        leftover food is instantly
+        redirected to nearby shelters
+        using AI and real-time tracking.
+
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<script
+type="module"
+src="firebase.js">
+</script>
+
+<script
+type="module"
+src="app.js">
+</script>
+
+</body>
+</html>
