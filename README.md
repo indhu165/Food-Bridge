@@ -93,6 +93,11 @@ FoodBridge/
 └── README.md
 ```
 ------------------
+Visit Live Demo here:
+
+https://indhu165.github.io/Food-Bridge/
+
+---------------------
 <img width="1870" height="895" alt="Screenshot 2026-06-17 003657" src="https://github.com/user-attachments/assets/8b9d64d7-ee8e-4f00-bad7-f01ce9c57837" />
 <img width="1892" height="909" alt="Screenshot 2026-06-17 003741" src="https://github.com/user-attachments/assets/50e997e8-8106-4263-92fd-ea7d5c95cb9b" />
 <img width="1894" height="919" alt="Screenshot 2026-06-17 003726" src="https://github.com/user-attachments/assets/a765cd65-4d04-49a9-b679-8b9b7fdd1f82" />
